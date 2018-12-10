@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CargoShipment</string>
+    <string-array name="currencyValues">
+        <item>Euros</item>
+        <item>Pounds</item>
+        <item>Dollars</item>
+    </string-array>
+    <string name="title_activity_question4">Map</string>
+</resources>
