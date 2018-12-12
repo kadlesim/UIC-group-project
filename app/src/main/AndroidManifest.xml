@@ -23,9 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Question1" />
-        <activity android:name=".Question2" />
-        <activity android:name=".Question3" />
+        <activity
+            android:name=".Question1"
+            android:label="@string/label_question1"
+            android:parentActivityName=".welcome"/>
+        <activity
+            android:name=".Question2"
+            android:label="@string/label_question2"
+            android:parentActivityName=".Question1"/>
+        <activity
+            android:name=".Question3"
+            android:label="@string/label_question3"
+            android:parentActivityName=".Question2"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,10 +47,22 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Question4" />
-        <activity android:name=".question5" />
-        <activity android:name=".Question6" />
-        <activity android:name=".summary"></activity>
+        <activity
+            android:name=".Question4"
+            android:label="@string/label_question4"
+            android:parentActivityName=".Question3"/>
+        <activity
+            android:name=".Question5"
+            android:label="@string/label_question5"
+            android:parentActivityName=".Question4"/>
+        <activity
+            android:name=".Question6"
+            android:label="@string/label_question6"
+            android:parentActivityName=".Question5"/>
+        <activity
+            android:name=".summary"
+            android:label="@string/label_summary"
+            android:parentActivityName=".Question6"/>
     </application>
 
 </manifest>

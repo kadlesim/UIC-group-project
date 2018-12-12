@@ -2,6 +2,7 @@ package com.example.tevod.cargoshipment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,5 +46,10 @@ public class summary extends AppCompatActivity {
         });
 
 
+    }
+
+    public void goBack(View v){
+        NavUtils.navigateUpFromSameTask(this);
+        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
     }
 }

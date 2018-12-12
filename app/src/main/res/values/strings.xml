@@ -1,9 +1,22 @@
 <resources>
-    <string name="app_name">CargoShipment</string>
+    <string name="app_name">Cargo Shipment</string>
+    <string name="label_question1">Question 1</string>
+    <string name="label_question2">Question 2</string>
+    <string name="label_question3">Question 3</string>
+    <string name="label_question4">Question 4</string>
+    <string name="label_question5">Question 5</string>
+    <string name="label_question6">Question 6</string>
+    <string name="label_summary">Summary</string>
     <string-array name="currencyValues">
-        <item>Euros</item>
-        <item>Pounds</item>
-        <item>Dollars</item>
+        <item>EUR - Euro</item>
+        <item>GBP - Pound sterling</item>
+        <item>USD - US Dollar</item>
     </string-array>
     <string name="title_activity_question4">Map</string>
+    <string-array name="cargoTypes">
+        <item>Bananas</item>
+        <item>Oranges</item>
+        <item>Fish</item>
+        <item>Other</item>
+    </string-array>
 </resources>
