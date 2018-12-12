@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Cargo Shipment</string>
-    <string name="label_question1">Question 1</string>
-    <string name="label_question2">Question 2</string>
-    <string name="label_question3">Question 3</string>
-    <string name="label_question4">Question 4</string>
-    <string name="label_question5">Question 5</string>
-    <string name="label_question6">Question 6</string>
+    <string name="label_question1">Question 1/6</string>
+    <string name="label_question2">Question 2/6</string>
+    <string name="label_question3">Question 3/6</string>
+    <string name="label_question4">Question 4/6</string>
+    <string name="label_question5">Question 5/6</string>
+    <string name="label_question6">Question 6/6</string>
     <string name="label_summary">Summary</string>
     <string-array name="currencyValues">
         <item>EUR - Euro</item>
@@ -18,5 +18,10 @@
         <item>Oranges</item>
         <item>Fish</item>
         <item>Other</item>
+    </string-array>
+    <string-array name="pickUpPlaces">
+        <item>Place 1</item>
+        <item>Place 2</item>
+        <item>Place 3</item>
     </string-array>
 </resources>
