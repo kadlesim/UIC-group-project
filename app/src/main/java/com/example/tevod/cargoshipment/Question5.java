@@ -5,6 +5,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class Question5 extends AppCompatActivity {
 
@@ -15,6 +16,10 @@ public class Question5 extends AppCompatActivity {
     }
 
     public void openNext(View v){
+        EditText date = findViewById(R.id.editTextDate);
+        EditText time = findViewById(R.id.editTextTime);
+        MyDataStorage.setDatetimeOfPickup(date.getText().toString() + " - " + time.getText().toString());
+
         Intent intent = new Intent(this, Question6.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);

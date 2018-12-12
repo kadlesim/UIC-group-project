@@ -16,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".welcome">
+        <activity android:name=".Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,7 @@
         <activity
             android:name=".Question1"
             android:label="@string/label_question1"
-            android:parentActivityName=".welcome"/>
+            android:parentActivityName=".Welcome"/>
         <activity
             android:name=".Question2"
             android:label="@string/label_question2"
@@ -60,7 +60,7 @@
             android:label="@string/label_question6"
             android:parentActivityName=".Question5"/>
         <activity
-            android:name=".summary"
+            android:name=".Summary"
             android:label="@string/label_summary"
             android:parentActivityName=".Question6"/>
     </application>

@@ -59,7 +59,7 @@
         app:srcCompat="@drawable/map2" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinnerPlace"
         android:layout_width="244dp"
         android:layout_height="25dp"
         android:layout_marginStart="32dp"

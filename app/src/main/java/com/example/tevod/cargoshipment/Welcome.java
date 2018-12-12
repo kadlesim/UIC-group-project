@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class welcome extends AppCompatActivity {
+public class Welcome extends AppCompatActivity {
 
     Button initButton;
     @Override

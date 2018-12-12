@@ -8,8 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class summary extends AppCompatActivity {
+public class Summary extends AppCompatActivity {
 
     Button cargo;
     @Override
@@ -17,11 +18,14 @@ public class summary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
+        TextView summary = findViewById(R.id.textViewSummary);
+        summary.setText(MyDataStorage.myToString());
+
         cargo = (Button)findViewById(R.id.btnCargo);
         cargo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final AlertDialog.Builder build = new AlertDialog.Builder(summary.this);
+                final AlertDialog.Builder build = new AlertDialog.Builder(Summary.this);
 
                 build.setCancelable(true);
                 build.setTitle("This is the test alert");
@@ -37,7 +41,7 @@ public class summary extends AppCompatActivity {
                 build.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(summary.this,Question1.class);
+                        Intent intent = new Intent(Summary.this,Question1.class);
                         startActivity(intent);
                     }
                 });

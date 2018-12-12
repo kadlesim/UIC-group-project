@@ -5,6 +5,8 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class Question6 extends AppCompatActivity {
 
@@ -15,7 +17,11 @@ public class Question6 extends AppCompatActivity {
     }
 
     public void openNext(View v){
-        Intent intent = new Intent(this, summary.class);
+        RadioGroup payments = (RadioGroup) findViewById(R.id.paymentMethods);
+        RadioButton payment = (RadioButton) findViewById(payments.getCheckedRadioButtonId());
+        MyDataStorage.setPaymentMethod(payment.getText().toString());
+
+        Intent intent = new Intent(this, Summary.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
 
